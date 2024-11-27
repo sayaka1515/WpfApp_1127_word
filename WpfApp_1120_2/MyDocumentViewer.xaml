@@ -47,7 +47,12 @@
                           Margin="10,0,0,0" SelectionChanged="fontFamilyComboBox_SelectionChanged"/>
                 <ComboBox x:Name="fontSizeComboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Height="32" Width="50"
                           Margin="10,0,0,0" SelectionChanged="fontSizeComboBox_SelectionChanged"/>                
-            </ToolBar> 
+            </ToolBar>
+            <ToolBar x:Name="editToolBar" Height="60" Width="500" Background="Bisque">
+                <!-- Existing controls -->
+                <xctk:ColorPicker x:Name="backgroundColorPicker" Width="100" Height="32" DisplayColorAndName="True"
+                      SelectedColorChanged="backgroundColorPicker_SelectedColorChanged"/>
+            </ToolBar>
         </ToolBarTray>
         <RichTextBox x:Name="documentRichTextBox" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
                      Background="#FFF4F1E4" SelectionChanged="documentRichTextBox_SelectionChanged">
